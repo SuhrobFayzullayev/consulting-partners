@@ -130,11 +130,17 @@ var reviewsSwiper = new Swiper(".mySwiperReviews", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    640: {
+    576: {
       slidesPerView: 2,
     },
-    1024: {
+    768: {
       slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1280: {
+      slidesPerView: 5,
     },
   },
 });
@@ -154,11 +160,17 @@ var sertificatesSwiper = new Swiper(".mySwiperSertificates", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    640: {
+    576: {
       slidesPerView: 2,
     },
-    1024: {
+    768: {
       slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1280: {
+      slidesPerView: 5,
     },
   },
 });
