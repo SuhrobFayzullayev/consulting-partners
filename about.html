@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/gotham-pro/index.css">
+    <link rel="stylesheet" href="./assets/styles/fancybox.css">
+    <link rel="stylesheet" href="./assets/styles/aos.css">
+    <link rel="stylesheet" href="./assets/styles/swiper.css">
+    <link rel="stylesheet" href="./assets/styles/tailwind/output.css">
+    <link rel="stylesheet" href="./assets/styles/sass/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Consulting Partners</title>
+</head>
+
+<body>
+    <div class="w-full mx-auto flex min-h-screen flex-col">
+        <!-- HEADER -->
+        <div class="header">
+            <!-- show scrool up -->
+            <div id="scrollableContentFixed"
+                class="bg-cwhite shadow-md header-fixed big-header w-full px-6 fixed transition-all duration-200 ease-linear -top-[200px] left-0 z-40">
+                <div class="custom-container">
+                    <!-- head section -->
+                    <div class="content flex my-8 justify-between items-center gap-10">
+                        <!-- logo -->
+                        <a href="#" class="block w-max">
+                            <img src="./assets/icons/logo-light.png" alt="Logo"
+                                class="w-[300px] max-md:w-[260px] max-sm:w-[220px]">
+                        </a>
+
+                        <ul class="info flex gap-10 max-xl:hidden">
+                            <!-- email -->
+                            <li>
+                                <a href="mailto: info@consultingpartners.uz" class="flex gap-2 group items-center">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="stroke-cred group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear">
+                                        <g>
+                                            <path
+                                                d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+
+                                    <p class="font-normal text-cblue text-[20px] max-md:text-[18px] ">
+                                        info@consultingpartners.uz
+                                    </p>
+                                </a>
+                            </li>
+
+                            <!-- phone -->
+                            <li>
+                                <a href="tel: +998 93 102 11 66" class="flex gap-2 group items-center">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                        class="fill-cred group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear -mt-0.5"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.6292 12.891L14.0852 12.438L13.0262 11.374L12.5722 11.827L13.6292 12.891ZM15.6142 12.248L17.5252 13.287L18.2402 11.969L16.3302 10.931L15.6142 12.248ZM17.8922 15.351L16.4722 16.764L17.5292 17.827L18.9492 16.415L17.8922 15.351ZM15.6062 17.218C14.1562 17.354 10.4062 17.233 6.34417 13.195L5.28617 14.258C9.71817 18.665 13.9372 18.881 15.7462 18.712L15.6062 17.218ZM6.34417 13.195C2.47317 9.34496 1.83117 6.10796 1.75117 4.70296L0.253173 4.78796C0.353173 6.55596 1.14817 10.144 5.28617 14.258L6.34417 13.195ZM7.71917 7.01496L8.00617 6.72896L6.95017 5.66596L6.66317 5.95096L7.71917 7.01496ZM8.23417 3.09396L6.97417 1.40996L5.77317 2.30996L7.03317 3.99296L8.23417 3.09396ZM2.73317 1.04296L1.16317 2.60296L2.22117 3.66696L3.79017 2.10696L2.73317 1.04296ZM7.19117 6.48296C6.66117 5.95096 6.66117 5.95096 6.66117 5.95296H6.65917L6.65617 5.95696C6.60896 6.00515 6.56643 6.05772 6.52917 6.11396C6.47517 6.19396 6.41617 6.29896 6.36617 6.43196C6.2444 6.77528 6.21408 7.14437 6.27817 7.50296C6.41217 8.36796 7.00817 9.51096 8.53417 11.029L9.59217 9.96496C8.16317 8.54496 7.82317 7.68096 7.76017 7.27296C7.73017 7.07896 7.76117 6.98296 7.77017 6.96096C7.77517 6.94696 7.77717 6.94596 7.77017 6.95496C7.76135 6.96883 7.75131 6.98188 7.74017 6.99396L7.73017 7.00396C7.72694 7.00707 7.72361 7.01007 7.72017 7.01296L7.19117 6.48296ZM8.53417 11.029C10.0612 12.547 11.2102 13.139 12.0762 13.271C12.5192 13.339 12.8762 13.285 13.1472 13.184C13.2987 13.1279 13.4405 13.0482 13.5672 12.948C13.5844 12.9336 13.6011 12.9186 13.6172 12.903L13.6242 12.897L13.6272 12.894L13.6282 12.892C13.6282 12.892 13.6292 12.891 13.1002 12.359C12.5702 11.827 12.5732 11.826 12.5732 11.826L12.5752 11.824L12.5772 11.822L12.5832 11.817L12.5932 11.807C12.6052 11.7962 12.6179 11.7861 12.6312 11.777C12.6412 11.77 12.6382 11.773 12.6242 11.779C12.5992 11.788 12.5012 11.819 12.3042 11.789C11.8902 11.725 11.0202 11.385 9.59217 9.96496L8.53417 11.029ZM6.97417 1.40896C5.95417 0.0489599 3.95017 -0.16704 2.73317 1.04296L3.79017 2.10696C4.32217 1.57796 5.26617 1.63296 5.77317 2.30996L6.97417 1.40896ZM1.75217 4.70396C1.73217 4.35796 1.89117 3.99596 2.22117 3.66796L1.16217 2.60396C0.625174 3.13796 0.202173 3.89396 0.253173 4.78796L1.75217 4.70396ZM16.4722 16.764C16.1982 17.038 15.9022 17.192 15.6072 17.219L15.7462 18.712C16.4812 18.643 17.0822 18.273 17.5302 17.828L16.4722 16.764ZM8.00617 6.72896C8.99117 5.74996 9.06417 4.20296 8.23517 3.09496L7.03417 3.99396C7.43717 4.53296 7.37717 5.23996 6.94917 5.66696L8.00617 6.72896ZM17.5262 13.288C18.3432 13.732 18.4702 14.778 17.8932 15.352L18.9512 16.415C20.2912 15.082 19.8782 12.859 18.2412 11.97L17.5262 13.288ZM14.0852 12.439C14.4692 12.057 15.0872 11.963 15.6152 12.249L16.3312 10.932C15.2472 10.342 13.9032 10.505 13.0272 11.375L14.0852 12.439Z" />
+                                    </svg>
+
+
+                                    <p class="font-normal text-cblue text-[20px] max-md:text-[18px] ">
+                                        +998 93 102 11 66
+                                    </p>
+                                </a>
+                            </li>
+
+                            <!-- language-block -->
+                            <li class="group relative">
+                                <button onclick="toggleLanguage()"
+                                    class="active-lang flex gap-1 items-center  cursor-pointer language-dropdown">
+                                    <p
+                                        class="font-normal text-cblue text-[20px] max-md:text-[18px] uppercase language-dropdown">
+                                        ru
+                                    </p>
+
+                                    <svg class="fill-cblue group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear -mt-1 language-dropdown"
+                                        width="14" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs class="language-dropdown" />
+                                        <rect id="Frame 22" width="7.999979" height="4.700282" fill="#FFFFFF"
+                                            fill-opacity="0" class="language-dropdown" />
+                                        <path id="Vector" class="language-dropdown"
+                                            d="M4 4.7C3.82 4.7 3.64 4.63 3.5 4.49L0.2 1.19C-0.07 0.92 -0.07 0.47 0.2 0.2C0.47 -0.07 0.92 -0.07 1.19 0.2L4 3L6.8 0.2C7.07 -0.07 7.52 -0.07 7.79 0.2C8.06 0.47 8.06 0.92 7.79 1.19L4.49 4.49C4.35 4.63 4.17 4.7 4 4.7Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </button>
+
+                                <ul id="languageDropdown"
+                                    class="dropdown active hidden w-fit h-fit bg-cwhite px-4 py-3 absolute top-9 right-0 rounded-md overflow-hidden language-dropdown ">
+
+                                    <!-- loop start -->
+                                    <li class="language-dropdown">
+                                        <a href="#"
+                                            class="language-dropdown font-normal text-cblue text-[18px] max-md:text-[16px] ">UZ</a>
+                                    </li>
+                                    <!-- loop end -->
+
+                                </ul>
+                            </li>
+
+                            <!-- icons-block -->
+                            <li class="flex gap-6 items-center">
+                                <!-- instagram -->
+                                <a href="#" class="group">
+                                    <svg class="fill-cblue group-hover:fill-cred group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear -mt-0.5"
+                                        width="20.000000" height="20.000000" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs />
+                                        <path id="Vector"
+                                            d="M8.92 0C10.11 0.04 11.35 0.04 12.54 0.08C13.61 0.12 14.59 0.29 15.52 0.85C16.72 1.57 17.44 2.64 17.7 4C17.82 4.81 17.87 5.66 17.91 6.47C17.95 8.26 17.91 10.05 17.91 11.84C17.91 12.78 17.87 13.72 17.57 14.61C16.97 16.36 15.74 17.42 13.95 17.76C13.14 17.93 12.29 17.93 11.48 17.98C9.69 18.02 7.94 17.98 6.15 17.98C5.21 17.98 4.27 17.93 3.38 17.64C1.63 17.04 0.57 15.8 0.23 14.01C0.06 13.2 0.06 12.35 0.01 11.54C-0.03 9.75 0.01 7.96 0.01 6.17C0.01 5.24 0.06 4.3 0.35 3.4C0.95 1.66 2.19 0.59 3.98 0.25C4.79 0.08 5.64 0.08 6.45 0.04C7.21 0 8.07 0 8.92 0ZM16.29 8.82C16.25 8.09 16.25 7.41 16.25 6.68C16.25 6 16.21 5.32 16.12 4.64C15.95 3.11 15.06 2.08 13.56 1.78C12.8 1.61 11.94 1.61 11.18 1.61C9.64 1.57 8.15 1.57 6.62 1.61C5.85 1.61 5.08 1.66 4.36 1.78C3.08 2 2.19 2.72 1.8 4C1.68 4.43 1.63 4.85 1.59 5.28C1.55 6.9 1.55 8.52 1.55 10.14C1.55 11.16 1.59 12.22 1.68 13.25C1.8 14.78 2.74 15.85 4.27 16.1C5.04 16.23 5.85 16.27 6.66 16.27C8.15 16.31 9.64 16.27 11.18 16.27C11.86 16.27 12.54 16.23 13.22 16.14C13.86 16.1 14.46 15.89 14.97 15.46C15.82 14.78 16.12 13.89 16.16 12.86C16.25 11.58 16.25 10.18 16.29 8.82Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                        <path id="Vector"
+                                            d="M13.52 8.99C13.52 11.54 11.48 13.59 8.92 13.59C6.36 13.59 4.32 11.54 4.32 8.94C4.32 6.43 6.41 4.38 8.96 4.38C11.48 4.38 13.52 6.43 13.52 8.99ZM8.88 11.97C10.5 11.97 11.86 10.6 11.86 8.99C11.86 7.37 10.5 6 8.88 6C7.21 6 5.89 7.37 5.89 8.99C5.89 10.6 7.26 11.97 8.88 11.97Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                        <path id="Vector"
+                                            d="M14.76 4.17C14.76 4.77 14.29 5.28 13.69 5.28C13.1 5.28 12.58 4.77 12.63 4.17C12.63 3.57 13.1 3.11 13.69 3.11C14.29 3.11 14.76 3.57 14.76 4.17Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+
+                                <!-- facebook -->
+                                <a href="#" class="group pl-4">
+                                    <svg class="fill-cblue group-hover:fill-cred group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear -mt-0.5"
+                                        width="20.000000" height="20.000000" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs />
+                                        <path id="Vector"
+                                            d="M8.02 9L5.51 9L5.51 18L1.76 18L1.76 9L0 9L0 5.82L1.76 5.82L1.76 3.75C1.76 2.29 2.47 0 5.51 0L8.29 0L8.29 3.08L6.3 3.08C6 3.08 5.51 3.26 5.51 3.97L5.51 5.82L8.33 5.82L8.02 9Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+
+                                <!-- telegram -->
+                                <a href="#" class="group mt-1">
+                                    <svg class="fill-cblue group-hover:fill-cred group-hover:opacity-100 opacity-50 transition-all duration-100 ease-linear -mt-0.5"
+                                        width="21.000000" height="21.000000" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector"
+                                            d="M16 0.89C15.95 1.3 15.86 1.75 15.77 2.16C14.99 5.81 14.22 9.45 13.44 13.1C13.4 13.33 13.35 13.51 13.26 13.69C13.08 14.01 12.81 14.1 12.44 14.01C12.21 13.97 12.03 13.87 11.85 13.74C10.66 12.87 9.52 12.01 8.34 11.14C8.2 11.05 8.11 11.05 7.98 11.19C7.38 11.73 6.84 12.32 6.24 12.87C6.02 13.1 5.79 13.24 5.47 13.19C5.24 13.19 5.1 13.1 5.06 12.87C4.69 11.73 4.33 10.64 3.97 9.5C3.83 9.14 3.69 8.73 3.6 8.36C3.56 8.22 3.51 8.13 3.33 8.09C2.19 7.72 1.05 7.36 -0.09 7.04C-0.23 6.99 -0.41 6.95 -0.55 6.86C-0.86 6.67 -0.91 6.4 -0.59 6.13C-0.41 5.95 -0.18 5.85 0.09 5.76C1.64 5.17 3.19 4.58 4.74 3.99C8.11 2.71 11.44 1.39 14.81 0.11C14.86 0.11 14.86 0.11 14.9 0.07C15.54 -0.16 16 0.16 16 0.89ZM5.52 12.14C5.56 12.1 5.56 12.05 5.56 12.05C5.65 11.23 5.7 10.41 5.79 9.59C5.79 9.41 5.88 9.23 6.02 9.09C8.2 7.13 10.39 5.17 12.58 3.21C12.71 3.07 12.85 2.98 12.99 2.85C13.03 2.8 13.12 2.76 13.08 2.66C13.03 2.57 12.94 2.57 12.85 2.57C12.67 2.57 12.53 2.66 12.4 2.76C9.71 4.44 7.02 6.13 4.33 7.86C4.19 7.95 4.15 8.04 4.19 8.22C4.51 9.23 4.83 10.23 5.2 11.23C5.29 11.46 5.38 11.78 5.52 12.14Z"
+                                            fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- sidebar open button -->
+                        <button onclick="openSidebar()"
+                            class="navbar-toggler ml-5 hidden w-max cursor-pointer hover:opacity-100 transition-all duration-100 ease-linear max-xl:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-[30px] fill-cred" viewBox="0 0 50 50">
+                                <path
+                                    d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- body section -->
+                    <div
+                        class="header-bottom-scroll max-xl:hidden bottom border-t-2 border-b-2 flex justify-between items-center">
+                        <!-- menu -->
+                        <div class="flex items-center gap-28 max-lg:hidden">
+                            <a href="#"
+                                class="menu-link active-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Главная
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                О нас
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Услуги
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Новости
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Контакты
+                            </a>
+                        </div>
+
+                        <!-- request -->
+                        <button type="button" onclick="submitApplicationModalOpen()"
+                            class="bg-cred max-lg:hidden transition-all duration-100 ease-linear request-btn text-cwhite py-3.5 px-8 max-md:py-3 max-md:px-6 text-[15px] font-medium ">
+                            Заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- show scroll down -->
+            <div id="scroollableHeader"
+                class="w-full fixed shadow-md z-[60] -top-[100px] left-0 bg-cwhite transition-all duration-200 ease-linear px-6 max-xl:py-3">
+                <div class="custom-container">
+                    <div
+                        class="header-bottom-scroll transition-all duration-200 ease-linear flex justify-between items-center">
+                        <!-- logo -->
+                        <a href="#" class="block w-max">
+                            <img src="./assets/icons/logo-light.png" alt="Logo"
+                                class="w-[280px] max-md:w-[240px] max-sm:w-[200px]">
+                        </a>
+
+                        <!-- menu -->
+                        <div class="flex items-center gap-12 max-xl:hidden">
+                            <a href="#"
+                                class="menu-link active-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Главная
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                О нас
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Услуги
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Новости
+                            </a>
+
+                            <a href="#"
+                                class="menu-link hover:before:w-full before:mx-auto before:transition-all before:duration-100 before:ease-linear uppercase [&.active-link]:before:w-full before:h-0.5 py-6 before:w-0 before:bg-cred before:absolute relative before:bottom-0 font-medium before:-translate-x-1/2 before:translate-y-0 before:left-1/2 text-[16px] max-md:text-[14px] text-cblue">
+                                Контакты
+                            </a>
+                        </div>
+
+                        <!-- request btn -->
+                        <button type="button" onclick="submitApplicationModalOpen()"
+                            class="bg-cred max-xl:hidden transition-all duration-100 ease-linear request-btn text-cwhite py-3.5 px-8 max-md:py-3 max-md:px-6 text-[15px] font-medium ">
+                            Заказать звонок
+                        </button>
+
+                        <!-- sidebar open button -->
+                        <button onclick="openSidebar()"
+                            class="navbar-toggler ml-5 hidden w-max cursor-pointer max-xl:block">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="size-[30px] fill-cblue hover:fill-cred transition-all duration-100 ease-linear"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="headerOffCanvas"
+                class="overflow-hidden [&.open-canvas]:-translate-x-0 w-full -translate-x-[100%] header-off-canvas fixed z-[100] top-0 left-0 h-screen bg-[rgba(0,0,0,0.3)]">
+                <div
+                    class="transition-all duration-[0.15s] left-side max-w-screen-extra-xs h-full bg-white -translate-x-[100%]">
+                    <!-- head section -->
+                    <div class="head px-6 py-3 border-b flex justify-between items-center">
+                        <!-- language-block -->
+                        <ul class="flex w-fit items-center gap-3">
+
+                            <!-- loop start -->
+
+                            <li>
+                                <a href="#"
+                                    class="active [&.active]:text-cred hover:text-cred transition-all duration-100 ease-linear font-medium text-cblue text-[18px] max-md:text-[16px] uppercase">UZ</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="[&.active]:text-cred hover:text-cred transition-all duration-100 ease-linear font-medium text-cblue text-[18px] max-md:text-[16px] uppercase">ru</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="[&.active]:text-cred hover:text-cred transition-all duration-100 ease-linear font-medium text-cblue text-[18px] max-md:text-[16px] uppercase">en</a>
+                            </li>
+
+
+                            <!-- loop end -->
+
+                        </ul>
+
+                        <!-- sidebar closer -->
+                        <button type="button" onclick="closeSidebar()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                class="fill-cblue size-5 hover:fill-cred transition-all duration-100 ease-linear">
+                                <path
+                                    d="M9.156 6.313 6.312 9.156 22.157 25 6.22 40.969l2.81 2.811L25 27.844 40.938 43.78l2.843-2.843L27.844 25 43.687 9.156l-2.843-2.844L25 22.157Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- body section -->
+                    <div class="py-6">
+                        <!-- menu -->
+                        <div class="menu">
+                            <a href="#"
+                                class="menu-link block w-full active-link [&.active-link]:text-cred hover:text-cred transition-all duration-100 ease-linear px-6 py-3 uppercase font-medium text-[16px] max-md:text-[14px] text-cblue">
+                                Главная
+                            </a>
+
+                            <a href="#"
+                                class="menu-link block w-full [&.active-link]:text-cred hover:text-cred transition-all duration-100 ease-linear px-6 py-3 uppercase font-medium text-[16px] max-md:text-[14px] text-cblue">
+                                О нас
+                            </a>
+
+                            <a href="#"
+                                class="menu-link block w-full [&.active-link]:text-cred hover:text-cred transition-all duration-100 ease-linear px-6 py-3 uppercase font-medium text-[16px] max-md:text-[14px] text-cblue">
+                                Услуги
+                            </a>
+
+                            <a href="#"
+                                class="menu-link block w-full [&.active-link]:text-cred hover:text-cred transition-all duration-100 ease-linear px-6 py-3 uppercase font-medium text-[16px] max-md:text-[14px] text-cblue">
+                                Новости
+                            </a>
+
+                            <a href="#"
+                                class="menu-link block w-full [&.active-link]:text-cred hover:text-cred transition-all duration-100 ease-linear px-6 py-3 uppercase font-medium text-[16px] max-md:text-[14px] text-cblue">
+                                Контакты
+                            </a>
+                        </div>
+
+                        <!-- request btn -->
+                        <div class="px-6 mt-4 mb-5">
+                            <button type="button" onclick="submitApplicationModalOpen()"
+                                class="bg-cred  transition-all duration-100  ease-linear request-btn text-cwhite py-3.5 px-8 max-md:py-3 max-md:px-6 text-[15px] font-medium ">
+                                Заказать звонок
+                            </button>
+                        </div>
+
+                        <!-- email -->
+                        <div class="mt-2 px-6">
+                            <a href="mailto: info@consultingpartners.uz" class="flex gap-2 group items-center w-fit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="fill-cblue stroke-cwhite">
+                                    <g>
+                                        <path
+                                            d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+
+                                <p class="font-medium text-cblue text-[20px] max-md:text-[18px] ">
+                                    info@consultingpartners.uz
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="px-6 mt-4">
+                            <a href="tel: +998 93 102 11 66" class="flex gap-2 group items-center w-fit">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" class="fill-cblue -mt-0.5"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6292 12.891L14.0852 12.438L13.0262 11.374L12.5722 11.827L13.6292 12.891ZM15.6142 12.248L17.5252 13.287L18.2402 11.969L16.3302 10.931L15.6142 12.248ZM17.8922 15.351L16.4722 16.764L17.5292 17.827L18.9492 16.415L17.8922 15.351ZM15.6062 17.218C14.1562 17.354 10.4062 17.233 6.34417 13.195L5.28617 14.258C9.71817 18.665 13.9372 18.881 15.7462 18.712L15.6062 17.218ZM6.34417 13.195C2.47317 9.34496 1.83117 6.10796 1.75117 4.70296L0.253173 4.78796C0.353173 6.55596 1.14817 10.144 5.28617 14.258L6.34417 13.195ZM7.71917 7.01496L8.00617 6.72896L6.95017 5.66596L6.66317 5.95096L7.71917 7.01496ZM8.23417 3.09396L6.97417 1.40996L5.77317 2.30996L7.03317 3.99296L8.23417 3.09396ZM2.73317 1.04296L1.16317 2.60296L2.22117 3.66696L3.79017 2.10696L2.73317 1.04296ZM7.19117 6.48296C6.66117 5.95096 6.66117 5.95096 6.66117 5.95296H6.65917L6.65617 5.95696C6.60896 6.00515 6.56643 6.05772 6.52917 6.11396C6.47517 6.19396 6.41617 6.29896 6.36617 6.43196C6.2444 6.77528 6.21408 7.14437 6.27817 7.50296C6.41217 8.36796 7.00817 9.51096 8.53417 11.029L9.59217 9.96496C8.16317 8.54496 7.82317 7.68096 7.76017 7.27296C7.73017 7.07896 7.76117 6.98296 7.77017 6.96096C7.77517 6.94696 7.77717 6.94596 7.77017 6.95496C7.76135 6.96883 7.75131 6.98188 7.74017 6.99396L7.73017 7.00396C7.72694 7.00707 7.72361 7.01007 7.72017 7.01296L7.19117 6.48296ZM8.53417 11.029C10.0612 12.547 11.2102 13.139 12.0762 13.271C12.5192 13.339 12.8762 13.285 13.1472 13.184C13.2987 13.1279 13.4405 13.0482 13.5672 12.948C13.5844 12.9336 13.6011 12.9186 13.6172 12.903L13.6242 12.897L13.6272 12.894L13.6282 12.892C13.6282 12.892 13.6292 12.891 13.1002 12.359C12.5702 11.827 12.5732 11.826 12.5732 11.826L12.5752 11.824L12.5772 11.822L12.5832 11.817L12.5932 11.807C12.6052 11.7962 12.6179 11.7861 12.6312 11.777C12.6412 11.77 12.6382 11.773 12.6242 11.779C12.5992 11.788 12.5012 11.819 12.3042 11.789C11.8902 11.725 11.0202 11.385 9.59217 9.96496L8.53417 11.029ZM6.97417 1.40896C5.95417 0.0489599 3.95017 -0.16704 2.73317 1.04296L3.79017 2.10696C4.32217 1.57796 5.26617 1.63296 5.77317 2.30996L6.97417 1.40896ZM1.75217 4.70396C1.73217 4.35796 1.89117 3.99596 2.22117 3.66796L1.16217 2.60396C0.625174 3.13796 0.202173 3.89396 0.253173 4.78796L1.75217 4.70396ZM16.4722 16.764C16.1982 17.038 15.9022 17.192 15.6072 17.219L15.7462 18.712C16.4812 18.643 17.0822 18.273 17.5302 17.828L16.4722 16.764ZM8.00617 6.72896C8.99117 5.74996 9.06417 4.20296 8.23517 3.09496L7.03417 3.99396C7.43717 4.53296 7.37717 5.23996 6.94917 5.66696L8.00617 6.72896ZM17.5262 13.288C18.3432 13.732 18.4702 14.778 17.8932 15.352L18.9512 16.415C20.2912 15.082 19.8782 12.859 18.2412 11.97L17.5262 13.288ZM14.0852 12.439C14.4692 12.057 15.0872 11.963 15.6152 12.249L16.3312 10.932C15.2472 10.342 13.9032 10.505 13.0272 11.375L14.0852 12.439Z" />
+                                </svg>
+
+
+                                <p class="font-medium text-cblue text-[20px] max-md:text-[18px] ">
+                                    +998 93 102 11 66
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainWrapper" class="wrapper">
+            <!-- breadcrumbs -->
+            <div class="breadcrumbs h-[200px] w-full relative">
+                <img src="./assets/images/breadcrumbs-bg.png" class="size-full object-cover object-center" alt="">
+
+                <div class="overlay size-full absolute top-0 left-0 flex justify-center items-center">
+                    <div class="content w-full h-fit">
+                        <!-- title -->
+                        <p data-aos="fade-up"
+                            class="text-cwhite text-center font-normal mb-3 text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                            Наши услуги
+                        </p>
+
+                        <!-- links -->
+                        <div data-aos="fade-up" class="links-list w-fit mx-auto flex items-center gap-x-[15px]">
+                            <a href="#"
+                                class="menu-link uppercase font-medium text-[16px] max-md:text-[14px] text-cwhite">
+                                Контакты
+                            </a>
+
+                            <svg class="stroke-cwhite w-[16px]" viewBox="0 0 26 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 10.6001H0.999999" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4 1L25 10.6L15.4 20.2" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span class="menu-link uppercase font-medium text-[16px] max-md:text-[14px] text-cwhite">
+                                Контакты
+                            </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="about-1 px-6">
+                <div class="custom-container">
+                    <img src="./assets/images/about-1.png"
+                        class="w-full h-auto max-h-[440px] my-14 max-lg:my-10 max-md:my-6 object-cover object-center"
+                        alt="">
+
+                    <!-- title -->
+                    <p data-aos="fade-up"
+                        class="text-cblue text-center font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                        Наши услуги
+                    </p>
+
+                    <!-- HTML CONTENT or DESCRIPTION -->
+                    <div data-aos="fade-up" class="my-5 text-cblue text-[16px] max-md:text-[14px]">
+                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                        architecto
+                        beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                        aspernatur
+                        aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
+                        nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                        magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                        nostrum exercitationem ullam
+                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                        architecto
+                        beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                        aspernatur
+                        aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
+                        nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                        magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                        nostrum exercitationem ullam
+                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                        architecto
+                        beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                        aspernatur
+                        aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
+                        nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                        magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                        nostrum exercitationem ullam
+                    </div>
+
+                    <!-- about-2 -->
+                    <div data-aos="fade-up"
+                        class="w-full flex justify-between mt-12 max-lg:mt-10 max-md:mt-8 max-md:flex-wrap">
+                        <div class="img-block w-[40%] max-md:w-full">
+                            <img class="w-full max-md:w-[300px] max-md:mx-auto h-auto object-cover object-center mt-20 max-md:mt-0"
+                                src="https://s3-alpha-sig.figma.com/img/e06a/40da/7bb3f88fe3c667532ff7982257baff22?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CiL8bzndHs64SLqD2eybQ9w4MtSszwWGI9H5qnmggdsOBTBMrv2GF~DGJhVmuXcF5caLD1yoQGlCQsfoiHy60JxRlBenUhP2IKPp7uC4ypN00-HSP1uROJizLMobUE~eqKaqi6O0u0Jz9U26B7U0iwfiiA3FrfQ~sjFfkbDoo4n-dL6WhyIyYE4pnuzDcNshmvAhW8zH0scPhrOEsbe8RuZccjQL-xHkaQl4MPDX-OGiqTHHRis9Iqg9ULvMf-esk6PnlqV3mDKcZA5O49PaRtMgNDOxwVqrUcdeQsEcqTDoHnTqSecU44D2cHLbFnDKNTcPAlxoraXecXAojW0XEA__"
+                                alt="">
+                        </div>
+
+                        <div class="text-block w-[60%] max-md:w-full  md:pl-[40px] max-md:mt-6">
+                            <!-- title -->
+                            <p class="text-cblue mb-4 font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                                Наши услуги
+                            </p>
+
+                            <div class=" text-cblue text-[16px] max-md:text-[14px] ">
+                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                                architecto
+                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                                aspernatur
+                                aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+                                sequi
+                                nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet,
+                                consectetur,
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum exercitationem ullam
+                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                                architecto
+                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                                aspernatur
+                                aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+                                sequi
+                                nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet,
+                                consectetur,
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum exercitationem ullam
+                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                                architecto
+                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+                                aspernatur
+                                aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem
+                                sequi
+                                nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet,
+                                consectetur,
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore
+                                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum exercitationem ullam
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTNERS -->
+            <div class="bg-cwhite py-14 max-md:py-8 px-6">
+                <!-- PARTNERS -->
+                <div class="custom-container ">
+                    <p data-aos="fade-up"
+                        class="text-cblue font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px] mb-6">
+                        Наши клиенты
+                    </p>
+                </div>
+
+                <div id="bigPartnersSwiper" class="max-w-[1400px] w-full relative mx-auto max-xl:max-w-[1100px]">
+                    <div class="swiper mySwiperPartners max-w-screen-3xl mx-auto max-2xl:w-[calc(100%-80px)] ">
+                        <div class="swiper-wrapper ">
+                            <!-- loop start -->
+
+                            <a data-aos="fade-up" href="#" class="swiper-slide">
+                                <img src="./assets/icons/intel.svg" class="w-full max-h-[120px]">
+                            </a>
+
+                            <!-- loop end -->
+                        </div>
+
+                        <!-- navigation hidden -->
+                        <div class="swiper-button-next hidden">
+                        </div>
+                        <div class="swiper-button-prev hidden">
+                        </div>
+                    </div>
+
+                    <!-- navigation -->
+                    <div data-aos="fade-left" id="partnersNavigationNextButton"
+                        class="swiper-button-next after:hidden  right-0 group max-md:p-1">
+                        <img src="./assets/icons/arrow.svg" alt=""
+                            class="opacity-40 grayscale-[100%] group-hover:grayscale-[0%] group-hover:opacity-100 transition-all duration-100 ease-linear">
+                    </div>
+                    <div data-aos="fade-right" id="partnersNavigationPrevButton"
+                        class="swiper-button-prev after:hidden left-0 group max-md:p-1">
+                        <img src="./assets/icons/arrow.svg" alt=""
+                            class="opacity-40 rotate-180 grayscale-[100%] group-hover:grayscale-[0%] group-hover:opacity-100 transition-all duration-100 ease-linear">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT & FORM -->
+            <div class="contact-form bg-clight py-14 max-md:py-8 px-6">
+                <div class="custom-container">
+                    <div class="grid grid-cols-2 gap-14 max-lg:grid-cols-1">
+                        <div data-aos="fade-up" class="text-block">
+                            <p class="text-cblue font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                                Контакты
+                            </p>
+
+                            <div class="options mt-6">
+                                <!-- phone -->
+                                <div class="item flex gap-2 mb-6">
+                                    <p class="text-cred text-[16px] max-md:text-[14px] font-medium uppercase">
+                                        ТЕЛЕФОН:
+                                    </p>
+
+                                    <div>
+                                        <p class="text-cblue text-[16px] max-md:text-[14px] font-medium ">
+                                            +998 93 102 11 66
+                                        </p>
+
+                                        <!-- 2 phone number OPTIONAL -->
+                                        <!-- <p
+                                            class="text-cblue text-[16px] max-md:text-[14px] font-medium  mt-1.5">
+                                            +998 93 102 11 66
+                                        </p> -->
+                                    </div>
+                                </div>
+
+                                <!-- address -->
+                                <div class="item flex gap-2 mb-6">
+                                    <p class="text-cred text-[16px] max-md:text-[14px] font-medium uppercase">
+                                        Адрес:
+                                    </p>
+
+                                    <div>
+                                        <p class="text-cblue text-[16px] max-md:text-[14px] font-medium">
+                                            г.Ташкент, Яккасарайский р-н, ул.Тафаккур пр. Дом 43
+                                        </p>
+
+                                        <!-- 2 addres OPTIONAL -->
+                                        <!-- <p
+                                            class="text-cblue text-[16px] max-md:text-[14px] font-medium mt-1.5">
+                                            г.Ташкент, Яккасарайский р-н, ул.Тафаккур пр. Дом 43
+                                        </p> -->
+                                    </div>
+                                </div>
+
+                                <!-- email -->
+                                <div class="item flex gap-2">
+                                    <p class="text-cred text-[16px] max-md:text-[14px] font-medium uppercase">
+                                        Email:
+                                    </p>
+
+                                    <div>
+                                        <p class="text-cblue text-[16px] max-md:text-[14px] font-medium">
+                                            info@consultingpartners.uz
+                                        </p>
+
+                                        <!-- 2 email OPTIONAL -->
+                                        <!-- <p
+                                            class="text-cblue text-[16px] max-md:text-[14px] font-medium mt-1.5">
+                                            info@consultingpartners.uz
+                                        </p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" class="form-block">
+                            <p class="text-cblue font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                                Обратная связь
+                            </p>
+
+                            <form class="form mt-6">
+                                <!-- name -->
+                                <input type="text"
+                                    class="w-full pt-4 pb-3.5 px-6 text-cblue/70 placeholder-cblue/70 font-normal text-[16px] max-md:text-[15px] outline-none"
+                                    placeholder="ФИО" required>
+
+                                <!-- phone -->
+                                <div class="flex items-center mt-6">
+                                    <div
+                                        class="relative phoneDropDownBlock phoneContent close-phone-dropdown [&.open-phone-dropdown>.phone-dropdown]:opacity-100 [&.open-phone-dropdown>.phone-dropdown]:visible [&.close-phone-dropdown>.phone-dropdown]:opacity-0 [&.close-phone-dropdown>.phone-dropdown]:invisible">
+                                        <button type="button"
+                                            class="selectedPhone bg-cwhite hover:bg-cblack/5  justify-center w-[60px] h-[52px]  border-r border-cblue/50 text-cblue/70 font-normal text-[16px] flex items-center">
+                                            <img src="./assets/icons/flags/uz.svg" alt=""
+                                                class="w-[22px] selectedPhone-image">
+                                        </button>
+
+                                        <div
+                                            class="phone-dropdown transition-all duration-[3000] ease-linear absolute left-0 top-12 rounded-md  drop-shadow-lg border p-3 w-[300px] h-[200px] bg-cwhite overflow-y-auto">
+
+                                            <!-- loop start -->
+                                            <!-- uz -->
+                                            <button type="button"
+                                                onclick="setPhoneNumber('./assets/icons/flags/uz.svg', '+998 ')"
+                                                class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                                <!-- img -->
+                                                <img src="./assets/icons/flags/uz.svg" alt="" class="w-[22px]">
+
+                                                <!-- text -->
+                                                <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                                    Uzbekistan (+998)
+                                                </p>
+                                            </button>
+
+                                            <!-- ru -->
+                                            <button type="button"
+                                                onclick="setPhoneNumber('./assets/icons/flags/ru.svg', '+7 ')"
+                                                class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                                <!-- img -->
+                                                <img src="./assets/icons/flags/ru.svg" alt="" class="w-[22px]">
+
+                                                <!-- text -->
+                                                <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                                    Russia (+7)
+                                                </p>
+                                            </button>
+
+                                            <!-- tr -->
+                                            <button type="button"
+                                                onclick="setPhoneNumber('./assets/icons/flags/tr.svg', '+90 ')"
+                                                class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                                <!-- img -->
+                                                <img src="./assets/icons/flags/tr.svg" alt="" class="w-[22px]">
+
+                                                <!-- text -->
+                                                <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                                    Turkey (+90)
+                                                </p>
+                                            </button>
+
+                                            <!-- kr -->
+                                            <button type="button"
+                                                onclick="setPhoneNumber('./assets/icons/flags/kr.svg', '+82 ')"
+                                                class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                                <!-- img -->
+                                                <img src="./assets/icons/flags/kr.svg" alt="" class="w-[22px]">
+
+                                                <!-- text -->
+                                                <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                                    Korea (+82)
+                                                </p>
+                                            </button>
+
+                                            <!-- usa -->
+                                            <button type="button"
+                                                onclick="setPhoneNumber('./assets/icons/flags/us.svg', '+1 ')"
+                                                class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                                <!-- img -->
+                                                <img src="./assets/icons/flags/us.svg" alt="" class="w-[22px]">
+
+                                                <!-- text -->
+                                                <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                                    Amerika (+1)
+                                                </p>
+                                            </button>
+
+                                            <!-- loop end -->
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Mask number -->
+                                    <input type="text"
+                                        class="phoneNumber w-full pt-4 pb-3.5 px-6 text-cblue/70 placeholder-cblue/70 font-normal text-[16px] outline-none max-md:text-[15px]"
+                                        required value="+998 ">
+                                </div>
+
+                                <button type="submit"
+                                    class="bg-cred text-cwhite py-3.5 px-8 max-md:py-3 max-md:px-6 text-[15px] font-medium float-right mt-8">
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer mt-auto px-6 bg-cblue py-16 max-md:py-10">
+            <div class="custom-container py-6">
+                <div class="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+                    <!-- menu links -->
+                    <div
+                        class="grid grid-cols-3 max-md:col-span-1 max-md:row-start-2 max-md:pt-8 max-md:grid-cols-2 max-sm:text-center">
+                        <ul>
+                            <li class="my-2">
+                                <a href="#"
+                                    class="text-sm max-sm:text-xs font-normal  text-cwhite/60 hover:text-cwhite/100 transition-all duration-100 ease-linear [&.active-link]:text-cwhite/100 active-link">
+                                    Главная
+                                </a>
+                            </li>
+
+                            <li class="my-2">
+                                <a href="#"
+                                    class="text-sm max-sm:text-xs font-normal text-cwhite/60 hover:text-cwhite/100 transition-all duration-100 ease-linear [&.active-link]:text-cwhite/100">
+                                    О нас
+                                </a>
+                            </li>
+
+                            <li class="my-2">
+                                <a href="#"
+                                    class="text-sm max-sm:text-xs font-normal text-cwhite/60 hover:text-cwhite/100 transition-all duration-100 ease-linear [&.active-link]:text-cwhite/100 ">
+                                    Услуги
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li class="my-2">
+                                <a href="#"
+                                    class="text-sm max-sm:text-xs font-normal text-cwhite/60 hover:text-cwhite/100 transition-all duration-100 ease-linear [&.active-link]:text-cwhite/100 ">
+                                    Новости
+                                </a>
+                            </li>
+
+                            <li class="my-2">
+                                <a href="#"
+                                    class="text-sm max-sm:text-xs font-normal text-cwhite/60 hover:text-cwhite/100 transition-all duration-100 ease-linear [&.active-link]:text-cwhite/100">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- logo -->
+                    <div class="flex justify-center max-md:col-span-2 max-md:row-start-1">
+                        <a href="./index.html">
+                            <div class="img-block w-max">
+                                <img src="./assets/icons/logo-bottom.svg"
+                                    class="w-[160px] max-md:w-[120px] max-sm:w-[100px]" alt="Logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="max-md:col-span-1 max-md:row-start-2 max-md:pt-8 max-sm:row-start-3">
+                        <ul class="social-icons flex gap-5 justify-end my-4 max-sm:justify-center">
+                            <!-- instagram -->
+                            <li
+                                class="size-[34px] max-md:size-[30px] rounded-full overflow-hidden bg-opacity-15 bg-cwhite p-2 flex justify-center items-center group hover:bg-opacity-100 transition-all duration-100 ease-linear">
+                                <svg class="w-full h-full object-cover" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.92425 0C10.1173 0.0426092 11.353 0.0426095 12.546 0.0852186C13.6113 0.127828 14.5913 0.298264 15.5287 0.852183C16.7217 1.57654 17.4461 2.64177 17.7017 4.00526C17.8296 4.81484 17.8722 5.66702 17.9148 6.47659C17.9574 8.26618 17.9148 10.0558 17.9148 11.8453C17.9148 12.7827 17.8722 13.7201 17.5739 14.6149C16.9774 16.3619 15.7417 17.4271 13.9521 17.768C13.1426 17.9385 12.2904 17.9385 11.4808 17.9811C9.69121 18.0237 7.94424 17.9811 6.15465 17.9811C5.21725 17.9811 4.27985 17.9385 3.38506 17.6402C1.63808 17.0437 0.572856 15.808 0.231983 14.0184C0.0615465 13.2088 0.0615465 12.3567 0.0189374 11.5471C-0.0236717 9.7575 0.0189374 7.96791 0.0189374 6.17833C0.0189374 5.24093 0.0615462 4.30352 0.35981 3.40873C0.956338 1.66176 2.192 0.596528 3.98159 0.255655C4.79116 0.0852185 5.64334 0.0852185 6.45292 0.0426093C7.21988 1.61906e-07 8.07207 0 8.92425 0ZM16.2956 8.8201C16.253 8.8201 16.2956 8.8201 16.2956 8.8201C16.253 8.09574 16.253 7.41399 16.253 6.68964C16.253 6.00789 16.2104 5.32614 16.1252 4.6444C15.9548 3.11047 15.06 2.08785 13.5686 1.78958C12.8017 1.61915 11.9495 1.61915 11.1825 1.61915C9.6486 1.57654 8.15728 1.57654 6.62335 1.61915C5.85639 1.61915 5.08943 1.66176 4.36507 1.78958C3.0868 2.00263 2.192 2.72699 1.80852 4.00526C1.68069 4.43135 1.63809 4.85744 1.59548 5.28354C1.55287 6.90268 1.55287 8.52183 1.55287 10.141C1.55287 11.1636 1.59548 12.2288 1.68069 13.2514C1.80852 14.7854 2.74592 15.8506 4.27985 16.1063C5.04682 16.2341 5.85639 16.2767 6.66596 16.2767C8.15728 16.3193 9.6486 16.2767 11.1825 16.2767C11.8643 16.2767 12.546 16.2341 13.2278 16.1489C13.8669 16.1063 14.4634 15.8932 14.9747 15.4671C15.8269 14.7854 16.1252 13.8906 16.1678 12.868C16.253 11.5897 16.253 10.1836 16.2956 8.8201Z"
+                                        class="fill-cwhite group-hover:fill-cred transition-all duration-100 ease-linear" />
+                                    <path
+                                        d="M13.5263 8.99046C13.5263 11.547 11.4811 13.5922 8.92454 13.5922C6.36799 13.5922 4.32275 11.547 4.32275 8.94785C4.32275 6.43391 6.4106 4.38867 8.96715 4.38867C11.4811 4.38867 13.5263 6.43391 13.5263 8.99046ZM8.88193 11.9731C10.5011 11.9731 11.8646 10.6096 11.8646 8.99046C11.8646 7.37131 10.5011 6.00782 8.88193 6.00782C7.22018 6.00782 5.89929 7.37131 5.89929 8.99046C5.89929 10.6096 7.26278 11.9731 8.88193 11.9731Z"
+                                        class="fill-cwhite group-hover:fill-cred transition-all duration-100 ease-linear" />
+                                    <path
+                                        d="M14.7618 4.17558C14.7618 4.77211 14.2931 5.28342 13.6966 5.28342C13.1001 5.28342 12.5888 4.77211 12.6314 4.17558C12.6314 3.57905 13.1001 3.11035 13.6966 3.11035C14.2931 3.11035 14.7618 3.57905 14.7618 4.17558Z"
+                                        class="fill-cwhite group-hover:fill-cred transition-all duration-100 ease-linear" />
+                                </svg>
+                            </li>
+
+                            <!-- facebook -->
+                            <li
+                                class="size-[34px] max-md:size-[30px] rounded-full overflow-hidden bg-opacity-15 bg-cwhite p-2 flex justify-center items-center group hover:bg-opacity-100 transition-all duration-100 ease-linear">
+                                <svg class="w-full h-full object-cover" viewBox="0 0 9 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.02942 9H5.51471V18H1.76471V9H0V5.82353H1.76471V3.75C1.76471 2.29412 2.47059 0 5.51471 0H8.29412V3.08824H6.30883C6 3.08824 5.51471 3.26471 5.51471 3.97059V5.82353H8.33824L8.02942 9Z"
+                                        class="fill-cwhite group-hover:fill-cred transition-all duration-100 ease-linear" />
+                                </svg>
+                            </li>
+
+                            <!-- telegram -->
+                            <li
+                                class="size-[34px] max-md:size-[30px] rounded-full overflow-hidden bg-opacity-15 bg-cwhite p-2 flex justify-center items-center group hover:bg-opacity-100 transition-all duration-100 ease-linear">
+                                <svg lass="w-full h-full object-cover" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.0002 0.892685C16.9547 1.30279 16.8635 1.75845 16.7724 2.16855C15.9978 5.81389 15.2231 9.45922 14.4485 13.1046C14.4029 13.3324 14.3574 13.5147 14.2662 13.6969C14.084 14.0159 13.8106 14.107 13.446 14.0159C13.2182 13.9703 13.0359 13.8792 12.8537 13.7425C11.6689 12.8767 10.5298 12.011 9.34502 11.1452C9.20832 11.0541 9.11719 11.0541 8.98049 11.1908C8.38812 11.7376 7.84132 12.3299 7.24895 12.8767C7.02112 13.1046 6.79329 13.2413 6.47432 13.1957C6.24648 13.1957 6.10979 13.1046 6.06422 12.8767C5.69969 11.7376 5.33515 10.644 4.97062 9.50479C4.83392 9.14026 4.69722 8.73016 4.60608 8.36562C4.56052 8.22892 4.51495 8.13779 4.33268 8.09222C3.19352 7.72769 2.05435 7.36316 0.915181 7.04419C0.778481 6.99862 0.596214 6.95306 0.459514 6.86192C0.140547 6.67966 0.0949803 6.40626 0.413947 6.13286C0.596214 5.95059 0.824048 5.85945 1.09745 5.76832C2.64672 5.17595 4.19598 4.58359 5.74525 3.99122C9.11719 2.71535 12.4436 1.39392 15.8155 0.118052C15.8611 0.118052 15.8611 0.118052 15.9066 0.072485C16.5446 -0.155348 17.0002 0.163618 17.0002 0.892685ZM6.51989 12.1477C6.56545 12.1021 6.56545 12.0565 6.56545 12.0565C6.65659 11.2363 6.70215 10.4161 6.79329 9.59592C6.79329 9.41366 6.88442 9.23139 7.02112 9.09469C9.20832 7.13532 11.3955 5.17595 13.5827 3.21659C13.7194 3.07989 13.8561 2.98875 13.9928 2.85205C14.0384 2.80649 14.1295 2.76092 14.084 2.66979C14.0384 2.57865 13.9473 2.57865 13.8561 2.57865C13.6739 2.57865 13.5372 2.66979 13.4005 2.76092C10.712 4.44689 8.02359 6.13286 5.33515 7.86439C5.19845 7.95552 5.15288 8.04666 5.19845 8.22892C5.51742 9.23139 5.83639 10.2339 6.20092 11.2363C6.29205 11.4642 6.38319 11.7831 6.51989 12.1477Z"
+                                        class="fill-cwhite group-hover:fill-cred transition-all duration-100 ease-linear" />
+                                </svg>
+                            </li>
+                        </ul>
+
+                        <p class="text-sm max-sm:text-xs font-normal text-cwhite/60 text-end max-sm:text-center my-2.5">
+                            «Consulting Partners» Все права защищены
+                        </p>
+
+                        <p class="text-sm max-sm:text-xs font-normal text-cwhite/60 text-end my-2.5 max-sm:text-center">
+                            © Copyright 2024 - Web developed by <a target="_blank" href="https://sos.uz">SOS Group</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBMIT APPLICATION -->
+        <div id="submit-application"
+            class="backdrop px-5 fixed z-[110] justify-stretch items-start top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.60)] hidden">
+            <div id="submit-application-content" class="w-full h-full flex items-center justify-center">
+                <div class="form-block bg-clight max-w-screen-sm px-8 max-md:px-6 py-5 w-full">
+                    <p class="text-cblue font-normal text-[40px] max-lg:text-[36px] max-md:text-[34px]">
+                        Заказать звонок
+                    </p>
+
+                    <form class="form mt-6">
+                        <!-- name -->
+                        <input type="text"
+                            class="w-full pt-4 pb-3.5 px-6 text-cblue/70 placeholder-cblue/70 font-normal text-[16px] max-md:text-[15px] outline-none"
+                            placeholder="ФИО" required>
+
+                        <!-- phone -->
+                        <div class="flex items-center mt-6">
+                            <div
+                                class="relative phoneDropDownBlock phoneContent2 close-phone-dropdown2 [&.open-phone-dropdown2>.phone-dropdown2]:opacity-100 [&.open-phone-dropdown2>.phone-dropdown2]:visible [&.close-phone-dropdown2>.phone-dropdown2]:opacity-0 [&.close-phone-dropdown2>.phone-dropdown2]:invisible">
+                                <button type="button"
+                                    class="selectedPhone2 bg-cwhite hover:bg-cblack/5  justify-center w-[60px] h-[52px]  border-r border-cblue/50 text-cblue/70 font-normal text-[16px] flex items-center">
+                                    <img src="./assets/icons/flags/uz.svg" alt="" class="w-[22px] selectedPhone2-image">
+                                </button>
+
+                                <div
+                                    class="phone-dropdown2 transition-all duration-[3000] ease-linear absolute left-0 top-12 rounded-md  drop-shadow-lg border p-3 w-[300px] h-[200px] bg-cwhite overflow-y-auto">
+
+                                    <!-- loop start -->
+                                    <!-- uz -->
+                                    <button type="button"
+                                        onclick="setPhoneNumber2('./assets/icons/flags/uz.svg', '+998 ')"
+                                        class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                        <!-- img -->
+                                        <img src="./assets/icons/flags/uz.svg" alt="" class="w-[22px]">
+
+                                        <!-- text -->
+                                        <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                            Uzbekistan (+998)
+                                        </p>
+                                    </button>
+
+                                    <!-- ru -->
+                                    <button type="button"
+                                        onclick="setPhoneNumber2('./assets/icons/flags/ru.svg', '+7 ')"
+                                        class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                        <!-- img -->
+                                        <img src="./assets/icons/flags/ru.svg" alt="" class="w-[22px]">
+
+                                        <!-- text -->
+                                        <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                            Russia (+7)
+                                        </p>
+                                    </button>
+
+                                    <!-- tr -->
+                                    <button type="button"
+                                        onclick="setPhoneNumber2('./assets/icons/flags/tr.svg', '+90 ')"
+                                        class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                        <!-- img -->
+                                        <img src="./assets/icons/flags/tr.svg" alt="" class="w-[22px]">
+
+                                        <!-- text -->
+                                        <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                            Turkey (+90)
+                                        </p>
+                                    </button>
+
+                                    <!-- kr -->
+                                    <button type="button"
+                                        onclick="setPhoneNumber2('./assets/icons/flags/kr.svg', '+82 ')"
+                                        class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                        <!-- img -->
+                                        <img src="./assets/icons/flags/kr.svg" alt="" class="w-[22px]">
+
+                                        <!-- text -->
+                                        <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                            Korea (+82)
+                                        </p>
+                                    </button>
+
+                                    <!-- usa -->
+                                    <button type="button"
+                                        onclick="setPhoneNumber2('./assets/icons/flags/us.svg', '+1 ')"
+                                        class="item w-full flex items-center cursor-pointer gap-x-[10px] mb-4 hover:bg-black/5 py-0.5">
+                                        <!-- img -->
+                                        <img src="./assets/icons/flags/us.svg" alt="" class="w-[22px]">
+
+                                        <!-- text -->
+                                        <p class="text-[16px] text-cblue/70 font-normal -mt-0.5">
+                                            Amerika (+1)
+                                        </p>
+                                    </button>
+
+                                    <!-- loop end -->
+
+                                </div>
+                            </div>
+
+                            <!-- Mask number -->
+                            <input type="text"
+                                class="phoneNumber2 w-full pt-4 pb-3.5 px-6 text-cblue/70 placeholder-cblue/70 font-normal text-[16px] outline-none max-md:text-[15px]"
+                                required value="+998 ">
+                        </div>
+
+                        <!-- comment -->
+                        <textarea type="text" id="formCommentSubmit"
+                            class="w-full pt-4 pb-3.5 px-6 text-cblue/70 font-normal text-[16px] max-md:text-[15px] outline-none mt-6"
+                            placeholder="ФИО" required rows="3">
+                        </textarea>
+
+                        <!-- send button -->
+                        <button type="submit"
+                            class="bg-cred text-cwhite py-3.5 px-8 max-md:py-3 max-md:px-6 text-[15px] font-medium float-right mt-8">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/fancybox.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

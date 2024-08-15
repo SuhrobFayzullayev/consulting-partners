@@ -1,0 +1,288 @@
+* {
+  line-height: 1.4 !important;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.-translate-xy {
+  transform: translate(-50%, -50%);
+}
+
+.truncate-dots {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-image-from-content image,
+.remove-image-from-content * image {
+  display: none !important;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[type=text].el-input__inner:focus,
+[type=email].el-input__inner:focus,
+[type=password].el-input__inner:focus,
+[type=number].el-input__inner:focus,
+[type=tel].el-input__inner:focus,
+[multiple].el-input__inner:focus,
+textarea.el-input__inner:focus,
+select.el-input__inner:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Gotham Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.tinymce-editor {
+  /* Paragraph */
+  /* Anchor */
+  /* Images */
+  /* Unordered and Ordered Lists */
+  /* Table */
+  /* Input, TextArea, Button, Select, and Option */
+  /* Specific to Form Elements */
+  /* Note: This is a general representation. Browsers may have slightly different defaults. */
+}
+.tinymce-editor h1,
+.tinymce-editor h2,
+.tinymce-editor h3,
+.tinymce-editor h4,
+.tinymce-editor h5,
+.tinymce-editor h6 {
+  font-weight: bold;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+.tinymce-editor h1 {
+  font-size: 2em;
+}
+.tinymce-editor h2 {
+  font-size: 1.5em;
+}
+.tinymce-editor h3 {
+  font-size: 1.17em;
+}
+.tinymce-editor h4 {
+  font-size: 1em;
+}
+.tinymce-editor h5 {
+  font-size: 0.83em;
+}
+.tinymce-editor h6 {
+  font-size: 0.67em;
+}
+.tinymce-editor p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.tinymce-editor a {
+  /* Default color for links can vary */
+  font-weight: 700;
+  color: #5d0378;
+}
+.tinymce-editor img {
+  border-style: none; /* Images do not have borders by default */
+}
+.tinymce-editor ul,
+.tinymce-editor ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 40px; /* Default padding for list indentation */
+}
+.tinymce-editor li {
+  margin-bottom: 0.25em; /* Space between list items */
+}
+.tinymce-editor table {
+  border-collapse: collapse; /* Borders are collapsed into a single border */
+}
+.tinymce-editor th,
+.tinymce-editor td {
+  border: 1px solid black; /* Default border for table cells */
+  padding: 0.5em; /* Padding inside cells */
+}
+.tinymce-editor input,
+.tinymce-editor textarea,
+.tinymce-editor button,
+.tinymce-editor select,
+.tinymce-editor option {
+  margin: 0; /* No default margin */
+  padding: 0.25em; /* Default padding */
+  font-family: inherit; /* Inherits font family from parent */
+  font-size: 100%; /* Inherits font size from parent */
+  line-height: 1.15; /* Default line height */
+}
+.tinymce-editor input[type=text],
+.tinymce-editor input[type=password],
+.tinymce-editor input[type=email],
+.tinymce-editor textarea {
+  border: 1px solid #ccc; /* Default border color */
+  background-color: white; /* Default background */
+}
+.tinymce-editor button,
+.tinymce-editor input[type=button],
+.tinymce-editor input[type=submit],
+.tinymce-editor input[type=reset] {
+  background-color: #eee; /* Default background */
+  border: 1px solid #ccc; /* Default border */
+  padding: 0.5em 1em; /* Padding inside the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(93, 3, 120, 0.8784313725) !important;
+  border-radius: 10px;
+  opacity: 0.5 !important;
+}
+
+.custom-container {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+/* responsive */
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 576px !important;
+  }
+}
+@media (min-width: 640px) {
+  .custom-container {
+    max-width: 640px !important;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 768px !important;
+  }
+}
+@media (min-width: 895px) {
+  .custom-container {
+    max-width: 895px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-container {
+    max-width: 1024px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .custom-container {
+    max-width: 1280px !important;
+  }
+}
+@media (min-width: 1320px) {
+  .custom-container {
+    max-width: 1320px !important;
+  }
+}
+@media (min-width: 1023.9px) {
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .services-grid .item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .services-grid .item:nth-child(2) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  .services-grid .item:nth-child(3) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .services-grid .item:nth-child(4) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .services-grid .item:nth-child(5) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  .services-grid .item:nth-child(6) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .services-grid .item:nth-child(7) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .services-grid .item:nth-child(8) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  .services-grid .item:nth-child(9) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .services-grid .item:nth-child(10) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .services-grid .item:nth-child(11) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+}
+@media (max-width: 1023.9px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 767.9px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}/*# sourceMappingURL=index.css.map */
