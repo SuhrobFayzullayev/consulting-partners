@@ -5,7 +5,7 @@ const submitApplicationModalContent = document.querySelector(
 );
 
 // language
-const languageDropdown = document.getElementById("languageDropdown");
+const languageDropdown = document.querySelectorAll("#languageDropdown");
 
 // navbar
 const offCanvas = document.getElementById("headerOffCanvas");
@@ -372,8 +372,10 @@ function closeSidebar() {
 document.body.addEventListener("click", (e) => {
   if (e.target === offCanvas) closeSidebar();
   else if (!e.target.classList.contains("language-dropdown")) {
-    languageDropdown.classList.remove("block");
-    languageDropdown.classList.add("hidden");
+    languageDropdown.forEach((el) => {
+      el.classList.remove("block");
+      el.classList.add("hidden");
+    });
   }
 
   if (
@@ -384,13 +386,15 @@ document.body.addEventListener("click", (e) => {
 });
 
 function toggleLanguage() {
-  if (languageDropdown.classList.contains("block")) {
-    languageDropdown.classList.remove("block");
-    languageDropdown.classList.add("hidden");
-  } else {
-    languageDropdown.classList.remove("hidden");
-    languageDropdown.classList.add("block");
-  }
+  languageDropdown.forEach((el) => {
+    if (el.classList.contains("block")) {
+      el.classList.remove("block");
+      el.classList.add("hidden");
+    } else {
+      el.classList.remove("hidden");
+      el.classList.add("block");
+    }
+  });
 }
 
 function handleScrollAnimations(headerH, contentFixedHCF) {
@@ -398,12 +402,12 @@ function handleScrollAnimations(headerH, contentFixedHCF) {
 
   if (window.pageYOffset > 10) {
     headerH.style.top = "0";
-    contentFixedHCF.style.top = "-200px";
+    contentFixedHCF.style.top = "-300px";
 
     if (mainWrapper)
       mainWrapper.style.marginTop = `${headerH.offsetHeight + 10}px`;
   } else {
-    headerH.style.top = "-100px";
+    headerH.style.top = "-200px";
     contentFixedHCF.style.top = "0";
 
     if (mainWrapper)
